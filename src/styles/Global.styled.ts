@@ -17,13 +17,14 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: ${theme.color.fontColor};
+    line-height: 1.2; 
 
 }
 
 
 a {
     text-decoration: none;
-    color: inherit; 
+    /* color: inherit;  */
 }
 
 ul {
@@ -33,6 +34,10 @@ ul {
 button {
     background-color: unset;
     border: none; 
+}
+
+section {
+    padding: 100px 0; 
 }
 
 section:nth-of-type(odd) {
