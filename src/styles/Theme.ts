@@ -10,7 +10,7 @@ export const theme = {
         accentSecondary: '#606b84',
 
         fontColor: '#3a3a3a',
-        fontColorHeder: '#fff',
+        fontColorHeder: '#f2f2ee',
         fontColorTitle: '#606b84',
     }
 
