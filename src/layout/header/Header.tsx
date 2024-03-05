@@ -4,6 +4,7 @@ import { Logo } from "../../components/logo/Logo";
 import { Conteiner } from "../../components/Conteiner";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { HeaderMenu } from "./HeaderMenu";
+import { theme } from "../../styles/Theme";
 
 const items = ['Home', 'Skills', 'Works', 'Testimony', 'Contact',]; 
 
@@ -23,7 +24,7 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header `
-    background-color: rgba(96, 107, 132, 0.9);
+    background-color: ${theme.color.opasityBg};
     padding: 20px 0;
     position: fixed;
     top: 0;
