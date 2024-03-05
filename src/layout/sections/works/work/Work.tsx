@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { LinkTab } from '../../../../components/Link';
 
 
 type WorkPropsType ={
@@ -15,8 +16,8 @@ export const Work = (props:WorkPropsType) => {
             <Image src ={props.src} alt="" />
             <Title>{props.title}</Title>
             <Text>{props.text}</Text>
-            <Link href ={"#"}>demo</Link>
-            <Link href ={"#"}>code</Link>
+            <LinkTab href ={"#"}>demo</LinkTab>
+            <LinkTab href ={"#"}>code</LinkTab>
         </StyledWork>
     );
 };
@@ -25,6 +26,11 @@ const StyledWork = styled.div `
     background-color: #f2d7ae;
     max-width: 540px;
     width: 100%;
+
+
+    ${LinkTab} {
+        padding: 10px 0;
+    }
 `
 
 const Image = styled.img `

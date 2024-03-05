@@ -24,6 +24,7 @@ body {
 
 a {
     text-decoration: none;
+    color: ${theme.color.fontColorTitle};
     /* color: inherit;  */
 }
 
@@ -48,21 +49,19 @@ section:nth-of-type(even) {
     background-color: ${theme.color.secondaryBg};
 }
 
+h3 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
 
+
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+
+}
 
 `
-
-
-
-//   /* .josefin-sans {
-//     font-family: "Josefin Sans", sans-serif;
-//     font-optical-sizing: auto;
-//     font-weight: 700;
-//     font-style: normal;
-//   }
-  
-//   .poppins-regular {
-//     font-family: "Poppins", sans-serif;
-//     font-weight: 400;
-//     font-style: normal;
-//   } */
