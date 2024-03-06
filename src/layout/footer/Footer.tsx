@@ -56,8 +56,7 @@ const SocialItem = styled.li`
 `
 
 const SocialLink = styled.a`
-    background-color: ${theme.color.primaryBg};
-    opacity: 0.5;
+    background-color: rgba(242, 242, 238, 0.5);
     border-radius: 50%;
     width: 35px;
     height: 35px; 
@@ -65,6 +64,7 @@ const SocialLink = styled.a`
     display: flex; 
     justify-content: center;
     align-items: center; 
+    color: ${theme.color.accentColor};
 
 `
 const Copyright = styled.small`

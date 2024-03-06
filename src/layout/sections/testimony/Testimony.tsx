@@ -7,6 +7,7 @@ import { Slider } from '../../../components/slider/Slider';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Conteiner } from '../../../components/Conteiner';
 import { IconWrapper } from '../skills/skill/Skill';
+import { theme } from '../../../styles/Theme';
 
 export const Testimony = () => {
     return (
@@ -27,11 +28,12 @@ export const Testimony = () => {
 };
 
 const StyledTestimony = styled.section`
-    min-height: 50vh;
-    background-color: #a091ca; 
+    
 
 
     ${IconWrapper} {
-        margin-bottom: 60px; 
+        margin-bottom: 60px;
+        
     }
+
 `
