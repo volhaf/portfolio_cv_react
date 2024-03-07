@@ -21,8 +21,6 @@ export const Testimony = () => {
                     <Slider/>
                 </FlexWrapper>
             </Conteiner>
-            
-            
         </StyledTestimony>
     );
 };
