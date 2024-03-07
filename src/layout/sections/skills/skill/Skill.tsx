@@ -35,8 +35,11 @@ const StyledSkill = styled.div`
     flex-grow: 1;
     padding: 60px 20px 40px;
     
-
+    @media ${theme.media.large} {
+        width: 350px;
+    }
     @media ${theme.media.mobile} {
+        width: 330px;
         padding: 60px 0px 40px;
     }
 
