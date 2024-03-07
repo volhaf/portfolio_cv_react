@@ -19,6 +19,8 @@ body {
     color: ${theme.color.fontColor};
     line-height: 1.2; 
 
+    min-width: 360px; 
+
 }
 
 
