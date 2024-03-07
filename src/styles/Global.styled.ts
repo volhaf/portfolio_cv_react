@@ -25,6 +25,7 @@ body {
 a {
     text-decoration: none;
     color: ${theme.color.fontColorTitle};
+    cursor: pointer;
     /* color: inherit;  */
 }
 

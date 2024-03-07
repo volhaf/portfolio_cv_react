@@ -11,7 +11,13 @@ export const theme = {
 
         fontColor: '#3a3a3a',
         fontColorHeder: '#f2f2ee',
-        fontColorTitle: '#606b84',
+        fontColorTitle: '#606b84'
+    },
+
+
+    media: {
+        tablet: "screen and (max-width: 768px)",
+        mobile: "screen and (max-width: 576px)"
     }
 
 }

@@ -12,17 +12,17 @@ export const Footer = () => {
                 <SocialList>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId ={'inst'} height={'50px'} width={'50px'} viewBox={'0 0 50px 50px'} />
+                            <Icon iconId ={'inst'} height={'35px'} width={'35px'} viewBox={'0 0 35px 35px'} />
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId ={'linkedin'} height={'50px'} width={'50px'} viewBox={'0 0 50px 50px'} />
+                            <Icon iconId ={'linkedin'} height={'35px'} width={'35px'} viewBox={'0 0 35px 35px'} />
                         </SocialLink>
                     </SocialItem>
                     <SocialItem>
                         <SocialLink>
-                            <Icon iconId ={'github'} height={'50px'} width={'50px'} viewBox={'0 0 50px 50px'} />
+                            <Icon iconId ={'github'} height={'35px'} width={'35px'} viewBox={'0 0 35px 35px'} />
                         </SocialLink>
                     </SocialItem>
                 </SocialList>
@@ -53,19 +53,29 @@ const SocialList = styled.ul`
 `
 const SocialItem = styled.li`
     list-style: none;
+    display: flex;
 `
 
 const SocialLink = styled.a`
     background-color: rgba(242, 242, 238, 0.5);
     border-radius: 50%;
-    width: 35px;
-    height: 35px; 
+    width: 40px;
+    height: 40px; 
 
     display: flex; 
     justify-content: center;
     align-items: center; 
     color: ${theme.color.accentColor};
+    margin: 0 auto; 
 
+    &:hover {
+        color: ${theme.color.primaryBg};
+        transform: translateY(-4px); 
+    }
+
+use {
+    /* transform: scale(0.5) */
+}
 `
 const Copyright = styled.small`
     font-weight: 400;
@@ -73,4 +83,6 @@ const Copyright = styled.small`
     text-align: center;
     opacity: 0.5; 
 `
+
+
 
