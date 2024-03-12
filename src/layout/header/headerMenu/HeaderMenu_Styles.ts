@@ -1,6 +1,11 @@
 import styled, { css } from "styled-components"
 import { theme } from "../../../styles/Theme"
 
+
+
+// Menu 
+
+
 const Link = styled.a`
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
@@ -27,7 +32,6 @@ const Mask = styled.span`
     }
 `
 
-
 const MenuItem = styled.li`
     position: relative;
     
@@ -39,13 +43,11 @@ const MenuItem = styled.li`
         background-color: ${theme.color.accentColor};
         
 
-
         position: absolute; 
         top: 50%;
         left: -10px;
         right: -10px;
         z-index: 1; 
-
 
         transform: scale(0); 
     }
@@ -55,7 +57,6 @@ const MenuItem = styled.li`
             transform: scale(1); 
         }
     }
-
 
     &:hover {
         ${Mask} {
@@ -69,13 +70,11 @@ const MenuItem = styled.li`
 `
 
 
-// MOBILE MENU 
+// Mobile menu 
 
 
 const MobileMenu = styled.nav`
 `
-
-
 
 const MobileMenuPopup = styled.div<{isOpen: boolean}>`
         position: fixed; 
@@ -85,7 +84,6 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
         bottom: 0;
         background-color: ${theme.color.opasityBg};
         z-index: 100; 
-
 
         display: none; 
         ${props =>  props.isOpen && css<{isOpen: boolean}>`
@@ -103,8 +101,6 @@ const MobileMenuPopup = styled.div<{isOpen: boolean}>`
         flex-direction: column; 
     }
 `
-
-
 
 const BurgerButton = styled.button<{isOpen: boolean}>`
     position: fixed;
@@ -162,6 +158,22 @@ span {
 `
 
 
+
+// Desktop menu 
+
+
+const DesktopMenu = styled.nav`
+    ul {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+`
+
+
+
+
+
 export const S = {
     Link, 
     MenuItem,
@@ -169,4 +181,6 @@ export const S = {
     MobileMenu,
     MobileMenuPopup,
     BurgerButton,
+    DesktopMenu,
 }
+
