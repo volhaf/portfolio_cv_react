@@ -6,8 +6,9 @@ import { Icon } from '../../../components/icon/Icon';
 import { Slider } from '../../../components/slider/Slider';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Conteiner } from '../../../components/Conteiner';
-import { IconWrapper } from '../skills/skill/Skill';
+// import { IconWrapper } from '../skills/skill/Skill';
 import { theme } from '../../../styles/Theme';
+import { S} from '../skills/Skill_Styles'
 
 export const Testimony = () => {
     return (
@@ -15,9 +16,9 @@ export const Testimony = () => {
             <Conteiner>
                 <SectionTitle>Testimony</SectionTitle>
                 <FlexWrapper direction={'column'} align={'center'}>
-                <IconWrapper>
+                <S.IconWrapper>
                     <Icon iconId ={'test'}/>
-                </IconWrapper>
+                </S.IconWrapper>
                     <Slider/>
                 </FlexWrapper>
             </Conteiner>
@@ -29,7 +30,7 @@ const StyledTestimony = styled.section`
     
 
 
-    ${IconWrapper} {
+    ${S.IconWrapper} {
         margin-bottom: 60px;
         
     }
