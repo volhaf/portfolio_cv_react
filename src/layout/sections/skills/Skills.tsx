@@ -46,7 +46,7 @@ const skillData = [
 
 ]
 
-export const Skills = () => {
+export const Skills: React.FC = () => {
     return (
         <S.Skills>
             <Conteiner>
