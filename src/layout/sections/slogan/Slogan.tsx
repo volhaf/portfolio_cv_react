@@ -5,7 +5,7 @@ import { Button } from '../../../components/button/Button';
 import { Conteiner } from '../../../components/Conteiner';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 
-export const Slogan = () => {
+export const Slogan: React.FC = () => {
     return (
         <StyledSlogan>
             <Conteiner>
@@ -21,6 +21,4 @@ export const Slogan = () => {
 
 
 
-const StyledSlogan = styled.section`
-    
-`
+const StyledSlogan = styled.section``
