@@ -1,87 +1,34 @@
 import React from 'react';
-import styled from 'styled-components';
 import { Icon } from '../../components/icon/Icon';
 import { FlexWrapper } from '../../components/FlexWrapper';
-import { theme } from '../../styles/Theme';
-import { font } from '../../styles/Common';
+import { S } from './Footer_Styles';
 
-export const Footer = () => {
+
+const socialItemData = [
+    {iconId: 'inst'},
+    {iconId: 'linkedin'},
+    {iconId: 'github'},
+]
+
+export const Footer:React.FC = () => {
     return (
-        <StyledFooter>
+        <S.Footer>
             <FlexWrapper direction={'column'} align={'center'}>
-            <Name>@volha.dev</Name>
-                <SocialList>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId ={'inst'} height={'35px'} width={'35px'} viewBox={'0 0 35px 35px'} />
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId ={'linkedin'} height={'35px'} width={'35px'} viewBox={'0 0 35px 35px'} />
-                        </SocialLink>
-                    </SocialItem>
-                    <SocialItem>
-                        <SocialLink>
-                            <Icon iconId ={'github'} height={'35px'} width={'35px'} viewBox={'0 0 35px 35px'} />
-                        </SocialLink>
-                    </SocialItem>
-                </SocialList>
-            <Copyright>© 2024 Volha Filanovich, All Rights Reserved.</Copyright>
+            <S.Name>@volha.dev</S.Name>
+                <S.SocialList>
+
+                    {socialItemData.map((s, index)=> {
+                        return  <S.SocialItem key ={index}>
+                                    <S.SocialLink>
+                                        <Icon iconId ={s.iconId} height={'35px'} width={'35px'} viewBox={'0 0 35px 35px'} />
+                                    </S.SocialLink>
+                                </S.SocialItem>
+                    })}
+                    
+                </S.SocialList>
+            <S.Copyright>© 2024 Volha Filanovich, All Rights Reserved.</S.Copyright>
             </FlexWrapper>
-        </StyledFooter>
+        </S.Footer>
     );
 };
-
-const StyledFooter = styled.footer`
-    background-color: ${theme.color.opasityBg};
-    padding: 40px 0;
-`
-
-const Name = styled.span`
-${font({family: "'Josefin Sans', sans-serif", weight: 400, Fmax: 22, Fmin: 16})}
-    letter-spacing: 2px;
-    color: ${theme.color.primaryBg};
-`
-
-const SocialList = styled.ul`
-    display: flex;
-    gap: 20px;
-    margin: 30px 0;
-
-`
-const SocialItem = styled.li`
-    list-style: none;
-    display: flex;
-`
-
-const SocialLink = styled.a`
-    background-color: rgba(242, 242, 238, 0.5);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px; 
-
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    color: ${theme.color.accentColor};
-    margin: 0 auto; 
-
-    &:hover {
-        color: ${theme.color.primaryBg};
-        transform: translateY(-4px); 
-    }
-
-use {
-    /* transform: scale(0.5) */
-}
-`
-const Copyright = styled.small`
-    font-weight: 400;
-    font-size: 12px;
-    text-align: center;
-    opacity: 0.5; 
-`
-
-
 
