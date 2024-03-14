@@ -41,9 +41,6 @@ const SocialLink = styled.a`
         transform: translateY(-4px); 
     }
 
-use {
-    /* transform: scale(0.5) */
-}
 `
 const Copyright = styled.small`
     font-weight: 400;
