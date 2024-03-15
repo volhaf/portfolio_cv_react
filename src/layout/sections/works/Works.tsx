@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SectionTitle } from '../../../components/SectionTitle';
-import { TabMenu } from './tabMenu/TabMenu';
+import { TabMenu, TabsStatusType } from './tabMenu/TabMenu';
 import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Work } from './work/Work';
 import socialImg from '../../../assets/images/proj-1.png';
@@ -9,7 +9,7 @@ import { Conteiner } from '../../../components/Conteiner';
 import {S} from './Works_Styles';
 
 
-const tabsItems: Array<{status:'all' | 'landing'| 'react'| 'spa', title: string}> = [
+const tabsItems: Array<{status:TabsStatusType, title: string}> = [
     {
         title: 'all',
         status: 'all',
@@ -60,7 +60,7 @@ if (currentFilterStatus === 'spa') {
 }
 
 
-function changeFilterStatus(value: 'all' | 'landing'| 'react'| 'spa') {
+function changeFilterStatus(value: TabsStatusType) {
     setCurrentFilterStatus(value);
 }
 
