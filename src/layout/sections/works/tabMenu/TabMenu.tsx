@@ -3,15 +3,18 @@ import React from 'react';
 import styled from 'styled-components';
 import { LinkTab } from '../../../../components/Link';
 
+type TabMenuPropsType = {
+    tabsItems: Array<{status: 'all' | 'landing'| 'react'| 'spa', title: string}>
+    changeFilterStatus: (value: 'all' | 'landing'| 'react'| 'spa') => void
+}
 
-
-export const TabMenu: React.FC<{menuItems: Array<string>}> = (props: {menuItems: Array<string>}) => {
+export const TabMenu = (props: TabMenuPropsType) => {
     return (
         <StyledTabMenu>
             <ul>
-                {props.menuItems.map((item:string, index: number ) => {
+                {props.tabsItems.map((item, index) => {
                     return <ListItem key ={index}>
-                        <LinkTab href="">{item}</LinkTab>
+                        <LinkTab as={'button'} onClick={()=> {props.changeFilterStatus(item.status)}}>{item.title}</LinkTab>
                     </ListItem>
                 })}
             </ul>
