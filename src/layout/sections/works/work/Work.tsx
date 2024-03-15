@@ -23,7 +23,7 @@ export const Work: React.FC<WorkPropsType>= (props:WorkPropsType) => {
             <S.Description>
                 <S.Title>{props.title}</S.Title>
                 <S.Text>{props.text}</S.Text>
-                <LinkTab href ={"#"}>demo</LinkTab>
+                <LinkTab active href ={"#"}>demo</LinkTab>
                 <LinkTab href ={"#"}>code</LinkTab>
             </S.Description>
             

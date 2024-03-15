@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { theme } from "../styles/Theme";
 
-export const LinkTab = styled.a`
+export const LinkTab = styled.a<{active?: boolean}>`
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
@@ -28,5 +28,11 @@ export const LinkTab = styled.a`
         right: 0; 
         z-index: -1;
 
+
+
+        ${props => props.active && css<{active?: boolean}>`
+        height: 10px;
+
+        `}
     }
 `

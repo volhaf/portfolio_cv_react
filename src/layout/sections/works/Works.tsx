@@ -35,7 +35,31 @@ const worksData = [
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         type: "spa",
     },
+    {
+        title: 'Social Network',
+        src: socialImg,
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+        type: "spa",
+    },
+    {
+        title: 'Social Network',
+        src: socialImg,
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+        type: "spa",
+    },
 
+    {
+        title: 'Timer',
+        src: timerImg,
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim',
+        type: "react",
+    },
+    {
+        title: 'Timer',
+        src: timerImg,
+        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim',
+        type: "react",
+    },
     {
         title: 'Timer',
         src: timerImg,
@@ -71,7 +95,9 @@ function changeFilterStatus(value: TabsStatusType) {
         <S.Works>
             <Conteiner>
                 <SectionTitle>My Works</SectionTitle>
-                <TabMenu tabsItems={tabsItems} changeFilterStatus={changeFilterStatus}/>
+                <TabMenu tabsItems={tabsItems} 
+                        changeFilterStatus={changeFilterStatus}
+                        currentFilterStatus={currentFilterStatus}/>
                 <FlexWrapper justify ={'space-between'} align={'flex-start'} wrap={'wrap'}>
                     {filteredWorks.map((w)=> {
                         return <Work title={w.title} 
