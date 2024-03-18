@@ -5,6 +5,7 @@ import { theme } from "../../styles/Theme"
 
 const Slider = styled.div`
     max-width: 500px;
+    width: 100%; 
     display: flex;
     flex-direction: column; 
     align-items: center; 
@@ -29,8 +30,8 @@ const Pagination =styled.span`
         display: inline-block;
         width: 7px;
         height: 7px; 
-        margin: 5px;
-        border-radius: 5px;
+        
+        
         background-color: ${theme.color.opasityBg};
         border-radius: 20px; 
 
