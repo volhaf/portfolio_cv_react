@@ -1,8 +1,6 @@
 import styled from "styled-components"
 import { theme } from "../../styles/Theme"
 
-
-
 const Slider = styled.div`
     max-width: 500px;
     width: 100%; 
@@ -10,12 +8,12 @@ const Slider = styled.div`
     flex-direction: column; 
     align-items: center; 
 `
-const Slide =styled.div`
+const Slide = styled.div`
 text-align: center; 
 `
-const Text =styled.p``
+const Text = styled.p``
 
-const Name =styled.span`
+const Name = styled.span`
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     font-size: 16px;
@@ -25,7 +23,7 @@ const Name =styled.span`
     margin: 20px 0 40px;
     display: inline-block; 
 `
-const Pagination =styled.span`
+const Pagination = styled.span`
     span {
         display: inline-block;
         width: 7px;
