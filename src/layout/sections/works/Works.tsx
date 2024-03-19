@@ -92,7 +92,7 @@ function changeFilterStatus(value: TabsStatusType) {
 
 
     return (
-        <S.Works>
+        <S.Works id={'works'}>
             <Conteiner>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu tabsItems={tabsItems} 
