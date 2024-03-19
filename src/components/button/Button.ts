@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../styles/Theme";
 
 export const Button = styled.button`
-     font-weight: 400;
+    font-weight: 400;
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase; 
@@ -27,7 +27,7 @@ export const Button = styled.button`
         height: 10px;
         width: 50%;
         background-color: ${theme.color.accentColor};
-
+        transition: ${theme.animations.transition};
         position: absolute; 
         bottom: 0;
         left: 50%;
