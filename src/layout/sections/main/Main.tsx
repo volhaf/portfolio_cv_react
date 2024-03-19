@@ -4,6 +4,8 @@ import { FlexWrapper } from '../../../components/FlexWrapper';
 import { Conteiner } from '../../../components/Conteiner';
 import { S } from './Main_Styles';
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
+
 
 
 export const Main: React.FC = () => {
@@ -25,9 +27,17 @@ export const Main: React.FC = () => {
                             }}/>
                         </S.MainTitle>
                     </div>
-                    <S.PhotoWrapper>
-                        <S.Photo src={photo} alt=""/>
-                    </S.PhotoWrapper>
+                    <Tilt
+                        tiltEnable={false}
+                        glareEnable={true}
+                        glareMaxOpacity={0.8}
+                        glareColor="white"
+                        glarePosition="bottom"
+                        glareBorderRadius="20px">
+                        <S.PhotoWrapper>
+                            <S.Photo src={photo} alt=""/>
+                        </S.PhotoWrapper>
+                    </Tilt>
                 </FlexWrapper>
             </Conteiner>
         </S.Main>
