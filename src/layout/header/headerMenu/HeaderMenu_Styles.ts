@@ -19,6 +19,11 @@ const Mask = styled.span`
     height: 50%;
     overflow: hidden;
     color: ${theme.color.fontColorHeder};
+    transition: ${theme.animations.transition};
+
+        
+
+        
 
     & + & {
         top: 50%;
@@ -52,6 +57,7 @@ const NavLink = styled(Link)`
         z-index: 1; 
 
         transform: scale(0); 
+        transition: ${theme.animations.transition};
     }
 
 
