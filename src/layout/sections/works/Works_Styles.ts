@@ -12,7 +12,7 @@ const Works = styled.section`
     }
 `
 
-const Work = styled.div `
+const Work = styled.div`
     background-color: ${theme.color.secondaryBg};
     width: 330px;
     flex-grow: 1; 
@@ -40,7 +40,8 @@ const ImageWrapper = styled.div`
     position: absolute;
     left: 50%; 
     top: 50%; 
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -20%); 
+    transition: ${theme.animations.transition};
 
     &::before {
         width: 100%;
@@ -57,8 +58,9 @@ const ImageWrapper = styled.div`
         bottom: 0;
         
         background: rgba(0, 0, 0, 0.3);
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(3px);
         opacity: 0;
+        transition: ${theme.animations.transition}; 
     }
 
 &:hover {
@@ -68,6 +70,7 @@ const ImageWrapper = styled.div`
 
         ${Button} {
             opacity: 1;
+            transform: translate(-50%, -50%); 
         }
 }
     @media ${theme.media.tablet} {
@@ -84,7 +87,7 @@ const ImageWrapper = styled.div`
     }
 `
 
-const Image = styled.img `
+const Image = styled.img`
     width: 100%;
     height: 260px;
     object-fit: cover;
@@ -94,13 +97,13 @@ const Description = styled.div`
     padding: 25px 20px;
 `
 
-const Title = styled.h3 `
+const Title = styled.h3`
     color: ${theme.color.accentColor};
     text-transform: uppercase; 
     
 `
 
-const Text = styled.p `
+const Text = styled.p`
     margin: 15px 0 10px;
 `
 
@@ -112,5 +115,5 @@ export const S = {
     Image,
     Description,
     Title,
-    Text, 
+    Text,
 }

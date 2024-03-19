@@ -15,7 +15,6 @@ export const Button = styled.button`
 
     &:hover {
         color: ${theme.color.fontColorHeder};
-        
         &::before{ 
         height: 100%;
         width: 100%;
