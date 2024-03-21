@@ -14,8 +14,8 @@ const Works = styled.section`
 
 const Work = styled.div`
     background-color: ${theme.color.secondaryBg};
-    width: 330px;
-    flex-grow: 1; 
+    /* width: 330px;
+    flex-grow: 1;  */
 
 
     ${LinkTab} {
@@ -26,10 +26,10 @@ const Work = styled.div`
         }
     }
 
-
+/* 
     @media ${theme.media.desktop} {
         max-width: 540px;
-    }
+    } */
 `
 
 const ImageWrapper = styled.div`
