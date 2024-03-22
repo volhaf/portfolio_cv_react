@@ -6,7 +6,7 @@ import { S } from './Footer_Styles';
 
 const socialItemData = [
     {iconId: 'inst', href: 'https://www.instagram.com/volha.dev/'},
-    {iconId: 'linkedin', href: 'www.linkedin.com/in/volha-filanovich-355a562b1'},
+    {iconId: 'linkedin', href: 'https://www.linkedin.com/in/volha-filanovich-355a562b1'},
     {iconId: 'github', href: 'https://github.com/volhaf'},
 ]
 
